@@ -1,6 +1,7 @@
 :root {
-    --white: #fff;
-    --off-white: #dcdcdc;
+    --grey: rgba(128, 128, 128, 1);
+    --steelblue: rgb(36, 63, 63);
+    --green: rgba(0, 255, 76, 0.6);
     --primary-font: 'Poppins', sans-serif;
 
 }
@@ -17,7 +18,7 @@
     width: 90%;
     height: 25%;
     color: white;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--steelblue);
     margin: 2% 5%;
     padding: 2% 5%;
     border-radius: 25px;
@@ -76,7 +77,7 @@
 .header-link {
     width: fit-content;
     color: white;
-    background-color: rgb(170, 0, 0);
+    background-color: var(--green);
     padding: 5px 10px;
     border: none;
     text-decoration: none;
@@ -153,7 +154,7 @@
     width: 200px;
     height: 200px;
     padding: 10px;
-    background-color: black;
+    background-color: var(--steelblue);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -176,8 +177,8 @@
 
 .left-nav a:hover {
     color: white;
-    background-color: rgb(170, 0, 0);
-    border: 1px solid rgb(170, 0, 0);
+    background-color: var(--green);
+    border: 1px solid var(--green);
 }
 
 .left-nav a:active,
@@ -185,7 +186,7 @@
 .highlight {
     border: none;
     color: white;
-    background-color: rgb(170, 0, 0);
+    background-color: var(--green);
 }
 
 /*----------- left nav section end -----------*/
@@ -201,7 +202,7 @@
 
 /*----------- footer section start -----------*/
 #footer {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--steelblue);
     margin: 0;
     padding: 2% 5%;
     color: white;
@@ -241,7 +242,7 @@ nav li {
 }
 
 nav li:hover {
-    background-color: grey;
+    background-color: var(--grey);
     border: 15px;
     border-radius: 5px;
 }
